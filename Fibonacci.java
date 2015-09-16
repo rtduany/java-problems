@@ -13,10 +13,19 @@ public class Fibonacci
     //lets define our main method
     public static void main(String[] args)
     {
-        //declare our variables
-        int f0 = 0;
-        int f1 = 1;
-        int f2 = f0 + f1;
-        System.out.println(f0+""+f1+""+f2);
+        //declare our 3 integer variables
+        int f0, f1, f2;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a number to start with: ");
+        f0 = scan.nextInt();
+        //make the two numbers same
+        f1 = f0;
+        //the for statement will start with the second number in the sequence
+        System.out.println(f0);
+        //lets define a for loop to iterate through the recursive formula
+        for(int x = 0; x <= 50; x++){
+            f2 = f1 + f0; //f2 = 1 + 1
+            System.out.println(f2)
+        }
     }
 }
