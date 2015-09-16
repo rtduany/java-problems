@@ -13,6 +13,10 @@ public class Fibonacci
     //lets define our main method
     public static void main(String[] args)
     {
-        
+        //declare our variables
+        int f0 = 0;
+        int f1 = 1;
+        int f2 = f0 + f1;
+        System.out.println(f0+""+f1+""+f2);
     }
 }
