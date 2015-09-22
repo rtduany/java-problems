@@ -13,4 +13,19 @@ class Josephus {
         numOfPeople = 0;
         countNum = 0;
     }
+	//lets now define some setter and getter methods for Josephus class
+	public void setNumOfPeople(int x) {
+        numOfPeople = x;
+	}
+    public int getNumOfPeople() {
+        return numOfPeople;
+    }
+
+    public void setCountNum(int x) {
+        countNum = x;
+    }
+
+    public int getCountNum() {
+        return countNum;
+    }
 }
