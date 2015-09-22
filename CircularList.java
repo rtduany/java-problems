@@ -64,5 +64,23 @@ class CircularList {
         }
 
     }
+	public void delete(int x) {
+        Node prev = first;
+        Node curr = first.next;
+        while (curr.iData != x) {
+            prev = curr;
+            curr = curr.next;
+        }
+        if (count == 1) {
+            first = null;
+            count--;
+        } else if (curr == first) {
+            prev.next = curr.next;
+            first = curr.next;
+            count--;
+        } else {
+            prev.next = curr.next;
+            count--;
+        }
 
 }
