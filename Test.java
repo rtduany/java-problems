@@ -10,6 +10,8 @@ class Test {
         suicide.addPeople();
         suicide.display();
 
-
+		//set the rules and begin execution
+		suicide.setCountNum(3);
+        suicide.execute();
 	}
 }
