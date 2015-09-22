@@ -15,5 +15,22 @@ class CircularList {
         current = null;
         count = 0;
     }
+	//lets now define our method
+	public boolean isEmpty() {
+        return first == null;
+    }
+
+    public void step() {
+        current = current.next;
+    }
+
+    public Node getCurrent() {
+        return current;
+    }
+
+    public Node getFirst() {
+        return first;
+    }
+
 
 }
