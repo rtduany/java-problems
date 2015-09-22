@@ -33,4 +33,14 @@ class Josephus {
             circle.insert(i);
         }
     }
+	public void move() {
+
+        for (int i = 0; i < countNum; i++) {
+            tail = head;
+            head = head.next;
+        }
+
+        System.out.println("KILLED : " + head.iData);
+
+    }
 }
