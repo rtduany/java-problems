@@ -82,5 +82,20 @@ class CircularList {
             prev.next = curr.next;
             count--;
         }
+	}
+
+	public void displayList() {
+        int x = 0;
+        Node printer = first;
+
+        while (x < count) {
+            printer.displayNode();
+            printer = printer.next;
+            x++;
+        }
+        System.out.println("");
+
+    }
+
 
 }
