@@ -3,6 +3,13 @@ package Flavious;
 class Test {
 	//lets define our main method to test our program
 	public static void main(String[] args) {
+		//lets instantiate a Josephus object
+		Josephus suicide = new Josephus();
+
+		suicide.setNumOfPeople(8);
+        suicide.addPeople();
+        suicide.display();
+
 
 	}
 }
