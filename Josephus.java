@@ -43,4 +43,25 @@ class Josephus {
         System.out.println("KILLED : " + head.iData);
 
     }
+	public void execute() {
+        tail = null;
+        head = circle.getFirst();
+        while (numOfPeople != 2) {
+            move();
+            circle.delete(head.iData);
+            tail = tail.next;
+            head = head.next;
+            numOfPeople--;
+            display();
+        }
+
+    }
+
+    public void display() {
+        System.out.print("Alive:  ");
+        circle.displayList();
+    }
+
+}
+
 }
