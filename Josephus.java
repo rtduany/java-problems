@@ -28,4 +28,9 @@ class Josephus {
     public int getCountNum() {
         return countNum;
     }
+	public void addPeople() {
+        for (int i = 1; i < numOfPeople; i++) {
+            circle.insert(i);
+        }
+    }
 }
