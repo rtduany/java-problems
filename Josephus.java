@@ -7,4 +7,10 @@ class Josephus {
     private Node head;
     private Node tail;
     CircularList circle;
+	//define a constructor method for Josephus class
+	public Josephus() {
+        circle = new CircularList();
+        numOfPeople = 0;
+        countNum = 0;
+    }
 }
