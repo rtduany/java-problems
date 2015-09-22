@@ -6,4 +6,14 @@ class CircularList {
     private Node last;
     private Node current;
     private int count; // total items in the list
+	public CircularList getCurrent;
+
+	//define a constructor method for the CircularList class
+	public CircularList() {
+        first = null;
+        last = null;
+        current = null;
+        count = 0;
+    }
+
 }
