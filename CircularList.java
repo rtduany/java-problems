@@ -46,5 +46,23 @@ class CircularList {
         step();
         count++;
     }
+	public boolean search(int x) {
+        Node search = first;
+        int y = 0;
+
+        while (search.iData != x && y < count) {
+            search = search.next;
+            y++;
+        }
+
+        if (search.iData == x) {
+            System.out.println("Found the value: " + search.iData);
+            return true;
+        } else {
+            System.out.println("Value not found in list");
+            return false;
+        }
+
+    }
 
 }
