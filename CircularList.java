@@ -31,6 +31,20 @@ class CircularList {
     public Node getFirst() {
         return first;
     }
+	public void insert(int x) {
+        Node newNode = new Node(x);
 
+        if (isEmpty()) {
+            first = newNode;
+            current = first;
+        } else {
+            current.next = newNode;
+        }
+
+        newNode.next = first;
+        last = newNode;
+        step();
+        count++;
+    }
 
 }
