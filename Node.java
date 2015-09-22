@@ -12,7 +12,7 @@ class Node {
 	//lets declare our variables
     int iData;
     Node next;
-
+	//define a constructor method for our Node.java class that takes 1 parameter
 	public Node(int x) {
         iData = x;
     }
